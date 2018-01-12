@@ -16,7 +16,7 @@ class Artist < ActiveRecord::Base
     #return the number of genres associated with the artist
     genre_count = 0
     self.songs.each {|song|
-      song.genre
+      << song.genre
     }
   end
 end
