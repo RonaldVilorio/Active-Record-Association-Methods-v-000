@@ -20,7 +20,7 @@ class Genre < ActiveRecord::Base
     # return an array of strings containing every musician's name
     artist_count = []
     self.songs.each{|song|
-      artist_count << song.artist
+      artist_count << song.artist.name
     }
     artist_count.size
   end
