@@ -22,6 +22,6 @@ class Genre < ActiveRecord::Base
     self.songs.each{|song|
       artist_count << song.artist.name
     }
-    artist_count.size
+    artist_count
   end
 end
